@@ -69,7 +69,7 @@ details summary{color:var(--panel);cursor:pointer;font-weight:700}
 /* Ensure transcript content (paragraphs, lists, spans) uses light text for legibility */
 details p, details div, details span, details li, details small{color:var(--text);margin:0}
 
-/* Links and buttons */
+/* Links and buttons *
 a{color:var(--accent)}
 a:hover,a:focus{text-decoration:underline}
 
