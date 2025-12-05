@@ -1,4 +1,12 @@
-header, nav, main, footer {
+header, nav, main, footer{
     max-width: 60rem;
     margin: auto;
+}
+
+nav {
+    margin: 0;
+    margin-left: auto;
+    ul {
+        flex-direction: row;
+      }
 }

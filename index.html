@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Start File">
+    <title>Instruments of the Performing Arts</title>
+    <meta name="description" content="Brooke Anderson's Sample Start File with SCSS">
     <meta name="author" content="Matt Rushforth">
 
-    <meta charset="UTF-8">
+
+
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="css/stylesmin.css" rel="stylesheet">
-    <!--fav icon info-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link href="css/blueprint.css" rel="stylesheet">
+    <meta name="theme-color" content="#072f4b">
 
-    <title>Start File - Web Languages and Principles</title>
+
+    
+<!-- fav icon stuff -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+
 </head>
 <body>
-    <div id="headerWrapper">
-        <header>
-            <img src="images/logo.png" alt="blue logo with the HTML Symbol" width="40" height="40">
-            <h1>Principles of Web Languages</h1>
-        </header>
-    </div>
+    
+<div id="headerWrapper">
+    <header>
+        <figure class="logo">
+            <img src="images/blueprint_logo.png" alt="Blueprint logo" width="45" height="50"
+            srcset="images/blueprint_logo.png 1x, images/blueprint_logo@2x.png 2x, images/blueprint_logo@3x.png 3x">
+        </figure>
+        <h1>Sagrada Familia Architecture</h1>
+    </header>
+</div>
 
-    <div id="navWrapper">
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Learn</a></li>
-                <li><a href="#">Practice</a></li>
-                <li><a href="#">Implement</a></li>
-            </ul>
-        </nav>
-    </div>
+<div id="navWrapper">
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <div id="mainWrapper">
-        <main>
-            <h1>Learn</h1>
-        </main>
-    </div>
+<div id="mainWrapper">
+    <main>
+        <div>
+            <picture class="hero">
+                <source media="(max-width: 700px)" srcset="images/building-s.png">
+                <source media="(max-width: 1100px)" srcset="images/building-m.png">
+                <img src="images/building-l.png" alt="image" width="16" height="9">
+            </picture>
+        </div>
+        <div>
 
-    <div id="footerWrapper">
-        <footer>
-            <p>&copy; <span id="year">x</span> &bull; Matt Rushforth</p>
-        </footer>
-    </div>
+            <video controls>
+                <source src="media/Matt_Assignment_Video.mp4" type="video/mp4" />
+                <source src="media/Matt_Assignment_Video.webm" type="video/webm" />
+                <track
+                  label="English"
+                  kind="subtitles"
+                  srclang="en"
+                  src="media/matt-en.vtt"
+                  default />
+                <track
+                  label="Español"
+                  kind="subtitles"
+                  srclang="es"
+                  src="media/matt-es.vtt" />
+              </video>
+              <details>
+                <summary>Video Transcript</summary>
+                    <p>I'm Matt a student in the web development uh degree and um right now I'm sitting in some comfortable pajamas because it's been pretty long day. 
+                        But um you know I'm going to talk about a little bit about what I like and what I am interested in. 
+                        Uh my favorite part about the web development and the design degree is the user research. 
+                        I really do enjoy the idea of um understanding how to implement processes that can help people um have a greater experience when it comes to uh a digital sphere. 
+                        I'm a huge fan of technology and so I really like video games. 
+                        I play them often with my friends and um it's a great social um like outlet for me. 
+                        I also really really like to um listen to music and to listen to audiobooks. Those are my kind of go-to type of ways to relax when I'm out on the go or when I'm doing homework or schoolwork. 
+                        And you know, yeah. Um that's pretty much me. Um I really hope to get out of this class a passing grade. and um a greater understanding for how to use different medias on all web platforms.
 
-    <script src="js/scripts.js"></script>
+
+              </details>
+        </div>
+    </main>
+</div>
+
+<div id="footerWrapper">
+    <footer>
+        <p>&copy; <span id="year">x</span> &bull; Matt Rushforth</p>
+    </footer>
+</div>
+<script src="js/scripts.js"></script>
 </body>
 </html>

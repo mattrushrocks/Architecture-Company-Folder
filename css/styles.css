@@ -333,40 +333,41 @@ body {
 }
 
 #headerWrapper {
-  background-color: #37486b;
-  color: white;
+  background: #EDEDED;
+  color: #37486b;
 }
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 1rem 16px;
   gap: 8px;
 }
 header h1 {
+  display: block;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 500;
-  color: white;
+  color: black;
+  font-family: "Orbitron", sans-serif;
 }
 
 #navWrapper {
-  background-color: #37486b;
-  padding: 0.5rem;
+  background-color: #1F4B86;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0.75rem;
+  padding: 0;
   margin: 0;
   display: flex;
-  flex: 1;
+  flex-direction: column;
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #098280;
+  background-color: #4a4a4b;
 }
 nav a {
   display: block;
@@ -376,16 +377,38 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: lightsteelblue;
+  color: orange;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 0.5rem 16px;
+}
+details summary {
+  background-color: beige;
 }
 
 #footerWrapper {
-  background-color: #098280;
-}
-#footerWrapper p {
-  padding: 0.5rem 16px;
-  margin: 0;
+  background: #1F4B86;
   color: white;
+}
+
+footer {
+  padding: 0.5rem 16px;
+}
+footer p {
+  margin: 0;
   font-weight: 300;
   text-align: center;
 }
@@ -397,10 +420,20 @@ nav a:hover {
   header h1 {
     font-size: 2rem;
   }
+  nav ul {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  nav {
+    margin: 0;
+    margin-left: auto;
+  }
+  nav ul {
+    flex-direction: row;
   }
 }

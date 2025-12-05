@@ -1,0 +1,88 @@
+/* Blueprint theme overrides - enforces Barlow and blueprint visuals */
+:root{
+  --bg:#072f4b;
+  --panel:#063450;
+  --muted:#bfefff;
+  --text:#e9fbff;
+  --accent:#8fd6ff;
+  --card-bg:rgba(255,255,255,0.03);
+}
+
+body{
+  font-family: "Barlow", sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:var(--text);
+  background-color:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  /* subtle blueprint grid (low contrast to avoid noise) */
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 48px), repeating-linear-gradient(90deg, rgba(255,255,255,0.01) 0, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 48px);
+  background-size:48px 48px,48px 48px;
+}
+
+#headerWrapper{
+  background: #063450;
+  color: #bfefff;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+header{display:flex;align-items:center;padding:1rem 16px;gap:12px}
+header h1{
+  display:block;
+  margin:0;
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.logo img{height:50px;width:auto}
+
+#navWrapper{background:transparent}
+nav ul{padding:0;margin:0}
+nav li{list-style:none}
+nav li.active{background-color:rgba(255,255,255,0.03)}
+nav a{color:var(--muted);border-left:1px solid rgba(255,255,255,0.02);display:block;padding:.5rem 1rem;font-weight:600}
+nav a:hover,nav a:focus{color:var(--text);text-decoration:underline}
+nav a:focus{outline:3px solid rgba(143,214,255,0.12);outline-offset:2px}
+
+/* Images and media */
+.hero img{border:1px solid rgba(255,255,255,0.04);border-radius:4px}
+video{border:1px solid rgba(255,255,255,0.04);border-radius:4px}
+details summary{color:var(--text);font-weight:600}
+
+/* Content readability */
+main,header,footer,nav{max-width:60rem;margin:auto;padding-left:1rem;padding-right:1rem}
+p{color:var(--text);font-size:1rem}
+h1,h2,h3,h4{color:var(--text);margin-top:1.25rem;margin-bottom:.5rem}
+h2{font-size:1.25rem}
+h3{font-size:1.05rem}
+
+/* Cards / panels */
+.card{background:var(--card-bg);border:1px solid rgba(255,255,255,0.04);padding:1rem;border-radius:6px}
+
+/* Video transcript: summary (title) is dark; transcript body is white for contrast */
+details{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.03);padding:.75rem 1rem;border-radius:6px}
+details summary{color:var(--panel);cursor:pointer;font-weight:700}
+/* Ensure transcript content (paragraphs, lists, spans) uses light text for legibility */
+details p, details div, details span, details li, details small{color:var(--text);margin:0}
+
+/* Links and buttons */
+a{color:var(--accent)}
+a:hover,a:focus{text-decoration:underline}
+
+/* Footer */
+#footerWrapper{background:#042836;color:var(--muted);border-top:1px solid rgba(255,255,255,0.04)}
+footer p{color:var(--muted)}
+
+/* Utility */
+.accent-line{height:3px;background:linear-gradient(90deg,var(--accent),transparent)}
+
+#footerWrapper{background:#042836;color:#bfefff;border-top:1px solid rgba(255,255,255,0.04)}
+footer p{color:#bfefff}
+
+/* small utility classes for blueprint look */
+.accent-line{height:2px;background:linear-gradient(90deg,#8fd6ff,transparent)}
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:1rem;border-radius:4px}

@@ -1,6 +1,10 @@
 header {
     padding: 2rem $gutter;
-    h1 {
-        font-size: 2rem;
+h1 {font-size: 2rem;}
+}
+
+nav {
+    ul {
+      flex-direction: row;
     }
 }
